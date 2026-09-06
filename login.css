@@ -1,0 +1,211 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #faf9f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+.background-animation {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    pointer-events: none;
+}
+.login {
+    width: 360px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px black;
+    text-align: center;
+    position: relative;
+    box-sizing: border-box;
+    opacity: 0;
+    transform: translateY(16px);
+    animation: fade-in-up 1s 400ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.login .avatar {
+    width: 60px;
+    height: 60px;
+    background: #d2933e;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+    font-size: 24px;
+    animation: zoomIn 1.3s;
+}
+.login h2 {
+    margin: 0 0 20px;
+    color: #1a2a40;
+    font-size: 25px;
+}
+.login form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+.login form label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #444;
+    margin-top: 6px;
+}
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+.label-row label {
+    margin: 0;
+}
+.label-row a {
+    font-size: 10px;
+    color: #54739b;
+    text-decoration: none;
+}
+.label-row a:hover {
+    color: #d2933e;
+}
+.login .field {
+    display: flex;
+    align-items: center;
+    background: #fbfbfb;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 12px;
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+}
+.login .field i {
+    color: #888;
+    margin-right: 10px;
+    font-size: 16px;
+}
+.login .field input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 13px;
+}
+.login .field input::placeholder {
+    color: #999;
+}
+.login .field:focus-within {
+    border-color: #d2933e;
+    box-shadow: 0 0 0 2px rgba(210, 147, 62, 0.12);
+}
+.login form button {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    background: #d2933e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login form button:hover {
+    background: #c48632;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(210, 147, 62, 0.25);
+}
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 25px 0 18px;
+    color: #666;
+    font-size: 11px;
+}
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #ddd;
+}
+.divider span {
+    padding: 0 10px;
+}
+.login .social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+}
+.login .social a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 21px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+.login .social a:first-child {
+    color: #4285f4;
+}
+.login .social a:last-child {
+    color: #1877f2;
+}
+.login .social a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.13);
+}
+.login p {
+    color: #444;
+    font-size: 12px;
+}
+.login p a {
+    color: #c58d24;
+    font-weight: 600;
+    text-decoration: none;
+}
+.login p a:hover {
+    color: #d2933e;
+}
+@keyframes zoomIn {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+@keyframes fade-in-up {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .login {
+        animation: none;
+        opacity: 1;
+        transform: none;
+    }
+    .login .avatar {
+        animation: none;
+    }
+}
