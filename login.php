@@ -1,5 +1,42 @@
 <?php include('header.php'); ?>
 
+<?php
+session_start();
+
+$connect = mysqli_connect("localhost", "root", "", "project");
+
+if (!$connect) {
+    die("Connection failed: " . mysqli_connect_error());
+}
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+
+    $email = mysqli_real_escape_string($connect, $_POST['email']);
+    $password = $_POST['password'];
+    
+    // query
+    $query = "SELECT * from users where email = '$email' and password = '$password' limit 1";
+    // execute
+    $result = mysqli_query($connect, $query);
+    
+    if ($result && mysqli_num_rows($result) > 0) {
+        $row = mysqli_fetch_assoc($result);
+        $_SESSION["USER"] = $row;
+        header("Location: home.php");
+        exit;
+    } else {
+        $error = "Email or Password is invalid";
+    }
+}
+?>
+
+<div class="main">
+    <?php
+    if (isset($error)) {
+        echo "<h2 class='text-center' style='color: red;'>" . $error . "</h2>";
+    }
+    ?>
+
 <img src="animation_BG.gif" class="background-animation" alt="">
 
 <div class="login">

@@ -1,5 +1,22 @@
 <?php include('header.php'); ?>
+<?php $connect=  mysqli_connect("localhost", "root", "", "project");
 
+if($_POST){
+$username = $_POST['username'];
+$email = $_POST['email'];
+$password = $_POST['password'];
+
+$query = "INSERT INTO `users` (`username`, `email`, `password`) VALUES ('$username', '$email', '$password')"; 
+$result = mysqli_query($connect, $query);
+ if ($result) {
+        $_SESSION['success_msg'] = " Saved successfully !";
+        header("Location: home.php");
+        exit();
+    } else {
+        echo "EROR" . mysqli_error($connect);
+    }
+}
+?>
 <img src="animation_BG.gif" class="background-animation" alt="">
 <div class="sign-up">
     <div class="avatar"><i class="fa-solid fa-user"></i></div>
