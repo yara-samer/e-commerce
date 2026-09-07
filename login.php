@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($result && mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result);
         $_SESSION["USER"] = $row;
-        header("Location: home.php");
+        header("Location: signup.php");
         exit;
     } else {
         $error = "Email or Password is invalid";

@@ -10,7 +10,7 @@ $query = "INSERT INTO `users` (`username`, `email`, `password`) VALUES ('$userna
 $result = mysqli_query($connect, $query);
  if ($result) {
         $_SESSION['success_msg'] = " Saved successfully !";
-        header("Location: home.php");
+        header("Location: login.php");
         exit();
     } else {
         echo "EROR" . mysqli_error($connect);
