@@ -1,0 +1,333 @@
+body {
+  background-color: #FBF5EF;
+  font-family: Arial, sans-serif;
+  color: #0A2640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh; 
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(10, 38, 64, 0.3);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.banner {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  color: #0A2640;
+}
+
+select {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #0A2640;
+  border-radius: 5px;
+  background-color: white;
+  color: #425C39;
+  font-size: 25px;
+}
+
+button {
+  background-color: #D2933E;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 25px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #425C39;
+  transform: scale(1.05);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/*code all the details-cairo ,alex,giza*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #FBF5EF; 
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #0A2640; 
+
+
+.container {
+
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(10, 38, 64, 0.2);
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.details-text {
+  font-size: 30px;   
+  font-weight: 500;  
+  margin: 15px 0;    
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: #0A2640;
+  font-weight: bold;
+  margin-bottom: 20px;
+  
+}
+
+p {
+  font-size: 30px;
+  margin-bottom: 12px;
+}
+ul {
+  text-align: left;
+  font-size: 100px;   /* أكبر */
+  margin-top: 15px;
+}
+ul li {
+  margin-bottom: 8px;
+  font-size: 30px;
+  align-items: center;
+}
+
+
+/* Images */
+.banner, .img-fluid {
+  width: 200%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Buttons*/
+button, .btn {
+  background-color: #D2933E; 
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #425C39; 
+  transform: scale(1.05);
+}
+
+
+/*book now btn.*/
+.book-btn {
+  display: block;
+  margin: 40px auto 0 auto; 
+  background-color: #D2933E; 
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+
+.back-btn {
+  display: block;
+  margin: 20px auto; 
+  background-color: #0A2640; 
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #D2933E; 
+  transform: scale(1.05);
+}
+
+/* Badges (Services) */
+.badge {
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  Discount Popup Animation */
+.discount-popup {
+  animation: pop 1s ease-in-out infinite alternate;
+  color: #D2933E;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@keyframes pop {
+  from { transform: scale(1); }
+  to { transform: scale(1.1); color: #425C39; }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/*finish part detailsss */
+
+
+/*Booking part style*/
+
+body {
+  background-color: #FBF5EF;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #0A2640; /* Navy */
+}
+.logo img {
+  display: block;
+  margin: 0 auto 20px auto; 
+  width: 200px; 
+  height: 120px;
+  border-radius: 50%; 
+  margin-top: 100px auto;
+  padding-top: 30%;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+
+
+.container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 80px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(10, 38, 64, 0.2);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1, h3 {
+  color: #0A2640;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.gender-options label {
+  font-size: 24px;   /* يكبر النص Male/Female */
+  margin-right: 25px auto;
+}
+
+
+input, select {
+  width: 100%;
+  padding: 16px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 30px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.book-btn {
+  background-color: #D2933E; 
+  color: #fff;
+  display: block;
+  margin: 30px auto 0 auto;
+}
+.book-btn:hover {
+  background-color: #425C39; 
+  transform: scale(1.05);
+}
+
+
+.back-btn {
+  background-color: #0A2640; 
+  color: #fff;
+  display: block;
+  margin: 20px auto;
+}
+.back-btn:hover {
+  background-color: #D2933E; 
+  transform: scale(1.05);
+}
+
+
+button[onclick*="showPayment"] {
+  background-color: #425C39; 
+  color: #fff;
+}
+button[onclick*="showPayment"]:hover {
+  background-color: #0A2640; 
+}
+
+
+#payment-box {
+  background: #FBF5EF;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(10, 38, 64, 0.2);
+}
+
+
+
+ul {
+  text-align: left;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+input[type="date"] {
+  font-size: 25px;
+  padding: 15px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+}
