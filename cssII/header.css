@@ -1,0 +1,371 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.header
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color:rgb(255, 239, 219);
+    height: 78px;
+}
+.header .left
+{
+    width: 15%;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    animation: MoveFromLeftToRight 2s;
+}
+.header .left img
+{
+    width: 60px;
+    height: auto;
+}
+.header .left h1
+{
+    margin: -30px;
+    color: #13406b;
+    font-family: Cooper ;
+    font-weight: 100;
+    font-size: 18px;
+}
+.header .bar
+{
+justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    width: 60%;
+}
+.header .bar ul
+{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+
+.header .bar ul li a
+{
+    font-family: arial ;
+    font-size: 20px;
+    font-weight: 700;
+    color: #13406b;
+    text-decoration: none;
+}
+.header .right
+{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    animation: MoveFromRightToLeft 2s;
+}
+.header .right button
+{
+    font-family: arial ;
+    font-size: 15px;
+    font-weight: 700;
+    color: #13406b;
+    width: 70px;
+    height: 45px;
+    background-color: transparent;
+    border: 2px solid  #13406b ;
+    border-radius: 27%;
+}
+.header .right button:hover
+{
+    background-color: #D2933E;
+    border: none;
+}
+.right button,
+.right a {
+    cursor: pointer;
+}
+@keyframes MoveFromLeftToRight
+{
+    from 
+    {
+     transform: translateX(-200%);
+    }
+    to 
+    {
+    transform: translateX(0%);
+    }
+}
+@keyframes MoveFromRightToLeft
+{
+    from 
+    {
+     transform: translateX(200%);
+    }
+    to 
+    {
+    transform: translateX(0%);
+    }
+}
+.container
+{
+    height: 470px;
+}
+.footer
+{
+    background-color:#264f75;
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    gap: 80px;
+
+}
+.footer .logo
+{
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    animation: MoveFromLeftToRight 2s;
+}
+.footer .logo img
+{
+    width: 90px;
+    height: 90px;
+    margin: 8px;
+    animation: MoveFromLeftToRight 2s;
+}
+.footer .name
+{
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 239, 219);
+    animation: MoveFromLeftToRight 2s ;
+}
+.footer .name h1
+{
+    color:#D2933E;
+    font-family: Cooper ;
+    font-weight: 100;
+    font-size: 22px;
+    
+}
+.footer .name p
+{
+    color:rgb(250, 224, 192);
+    font-family: Arial ;
+    font-weight: 100;
+    font-size: 12px;
+}
+.footer .footer-column
+{
+    width: 264px;
+    color: rgb(250, 224, 192);
+    margin: 20px 90px 20px 90px;
+    padding-left: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .footer-column h4
+{
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 6px;
+}
+.footer .footer-column p
+{
+    font-family: system-ui;
+    font-size: 13px;
+    font-weight: revert;
+    padding-top: 2px;
+}
+.footer .footer-column i
+{
+    font-size: 15px;
+    margin:4px;
+}
+.footer .social
+{
+    color: rgb(250, 224, 192);
+    margin: 20px;
+    padding: 10px 0px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    border-left: 1px solid rgba(250, 224, 192, 0.404);
+}
+.footer .social .links
+{
+    display: flex;
+    flex-direction: row;
+}
+.footer .social h4
+{
+    font-family: Arial;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 17px;
+    padding-bottom: 6px;
+}
+.footer .social .links i
+{
+    font-size: 20px;
+    margin:5px;
+}
+.footer .quick-links
+{
+    width: 30px;
+    color:white;
+    margin: 20px auto 20px 100px;
+    padding: 10px 0px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-right: 1px solid rgba(250, 224, 192, 0.445);
+}
+.footer .quick-links h4
+{
+    color: rgb(250, 224, 192);
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 7px 50px 7px 50px;
+    margin-top: 30px;
+}
+.footer .quick-links ul
+{
+    margin: 0 50px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style: none;
+}
+
+.footer .quick-links ul li a
+{
+    font-family: arial;
+    font-size: 14px;
+    font-weight: 100;
+    color: rgb(245, 208, 162);
+    text-decoration: none;
+}
+.container
+{
+    background-color: rgb(255, 252, 249);
+    height: 600px;
+}
+.container .about
+{
+    padding-left: 35px;
+    background-color: #ffefdb;
+    border: 1px solid #ffefdb;
+    border-radius: 59px;
+    margin: 20px;
+    padding-top: 19px;
+    width: 45%;
+    height: 280px;
+}
+.container .about .title 
+{
+    color: #13406b;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: 900;
+    padding: 5px 0px 7px 5px;
+}
+.container .about .title span
+{
+    color: #D2933E;
+}
+.container .about h2
+{
+    color: #13406b;
+    font-family: arial;
+    font-size: 39px;
+    font-weight: 800
+}
+.container .about h2 span
+{
+    color: #D2933E;
+}
+.container .about p
+{
+    color: #13406b;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 15px 0 15px 0px;
+
+}
+.container .about button
+{
+    background-color: #D2933E;
+    border: 1px solid #D2933E;
+    border-radius: 50px;
+    width: 196px;
+    height: 39px;
+    font-family: arial;
+    font-size: 15px;
+    font-weight: 800;
+}
+.container .about button a
+{
+    text-decoration: none;
+    color: #13406b;
+}
+.container .who-us
+{
+    color: #13406b;
+    padding: 15px 135px 49px 52px;
+}
+.container .who-us h1
+{
+    padding-bottom:20px ;
+    font-family: arial;
+    font-size: 30px;
+    font-weight: 900;
+}
+.container .who-us p
+{
+    font-family: arial;
+    font-size: 17px;
+    font-weight: 700;
+}
+.container .check-list
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+.container .check-list i
+{
+    padding-top: 14px;
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    border: 2px solid #D2933E;
+    font-size: 40px;
+    border-radius: 50%;
+    margin: 0px 20px 0px 45px;
+}
+.container .check-list .caption
+{
+    padding: 8px 0 0 3px;
+    color: #13406b;
+    font-family: arial;
+}
+.container .check-list .caption h2
+{    font-size: 21px;
+    font-weight: 800;
+}
+.container .check-list .caption p
+{    font-size: 13px;
+    font-weight: bold;
+}

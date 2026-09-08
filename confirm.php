@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Booking Confirmation</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Booking.css">
   <style>
    
     body {
@@ -125,6 +125,8 @@
   </style>
 </head>
 <body>
+    <?php include 'includes/header.php'; ?>
+
   <!-- Pop-up -->
   <div id="popup" class="popup" onclick="closePopup()">
     <div class="popup-content">
@@ -159,4 +161,5 @@
     }
   </script>
 </body>
+<?php include 'includes/footer.php'; ?>
 </html>

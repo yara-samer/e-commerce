@@ -3,11 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Housing Details - Mohandessin</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Booking.css">
   <!-- Bootstrap -->
   <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="cssII/details.css"/>
 </head>
 <body>
+    <?php include 'includes/header.php'; ?>
+
   <div class="container mt-5">
     <!-- Title + Image -->
     <h1 class="text-center mb-4">Mohandessin Student Housing</h1>
@@ -75,4 +78,5 @@
     }
   </style>
 </body>
+<?php include 'includes/footer.php'; ?>
 </html>

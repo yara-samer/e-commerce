@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Student Housing</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Booking.css">
 </head>
 <body>
+  <?php include 'includes/header.php'; ?>
   <div class="container">
     <img src="images/image5.jpg" alt="Student Housing" class="banner">
 
@@ -74,4 +75,5 @@
     }
   </script>
 </body>
+<?php include 'includes/footer.php'; ?>
 </html>
