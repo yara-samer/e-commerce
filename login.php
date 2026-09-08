@@ -1,8 +1,6 @@
 <?php include('header.php'); ?>
 
 <?php
-session_start();
-
 $connect = mysqli_connect("localhost", "root", "", "project");
 
 if (!$connect) {
