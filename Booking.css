@@ -106,7 +106,7 @@ p {
 }
 ul {
   text-align: left;
-  font-size: 100px;   /* أكبر */
+  font-size: 100px;   
   margin-top: 15px;
 }
 ul li {
@@ -246,7 +246,7 @@ h1, h3 {
   text-align: center;
 }
 .gender-options label {
-  font-size: 24px;   /* يكبر النص Male/Female */
+  font-size: 24px;   
   margin-right: 25px auto;
 }
 
