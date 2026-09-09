@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($result && mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result);
         $_SESSION["USER"] = $row;
-        header("Location: signup.php");
+        header("Location: profile.php");
         exit;
     } else {
         $error = "Email or Password is invalid";
@@ -34,9 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         echo "<h2 class='text-center' style='color: red;'>" . $error . "</h2>";
     }
     ?>
-
-<img src="animation_BG.gif" class="background-animation" alt="">
-
+<div class="auth-container">
 <div class="login">
     <div class="avatar"><i class="fa-solid fa-user"></i></div>
     <h2>Login</h2>
@@ -69,7 +67,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     <p>Not registered yet? <a href="signup.php" id="hover-signup">Sign Up</a></p>
 </div>
+</div>
 
 <script>new WOW().init();</script>
-</body>
-</html>
+
+<?php include("footer.php") ?>
