@@ -1,0 +1,108 @@
+/* =========================
+   STUDENT HOUSING PAGE
+   ========================= */
+
+.student-housing-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(10, 38, 64, 0.2);
+    text-align: center;
+}
+
+
+/* =========================
+   BANNER
+   ========================= */
+
+.student-housing-container .banner {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto 30px auto;
+    border-radius: 15px;
+}
+
+
+/* =========================
+   TITLE
+   ========================= */
+
+.student-housing-container h1 {
+    text-align: center;
+    color: #0A2640;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FORM
+   ========================= */
+
+#housingForm {
+    text-align: center;
+}
+
+
+/* =========================
+   SELECT
+   ========================= */
+
+#housingForm select {
+    display: block;
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 18px;
+    color: #0A2640;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   AREAS
+   ========================= */
+
+#areas-box {
+    text-align: center;
+}
+
+#areas-box h2 {
+    text-align: center;
+}
+
+
+/* =========================
+   NEXT BUTTON
+   ========================= */
+
+#housingForm button[onclick="goToDetails()"] {
+    display: block !important;
+    width: fit-content !important;
+    margin: 30px auto !important;
+    padding: 12px 30px !important;
+
+    background-color: #D2933E !important;
+    color: white !important;
+
+    border: none !important;
+    border-radius: 8px !important;
+
+    font-size: 18px !important;
+    font-weight: 600 !important;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+
+#housingForm button[onclick="goToDetails()"]:hover {
+    background-color: #425C39 !important;
+    transform: scale(1.05);
+}

@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Student Housing</title>
-  <link rel="stylesheet" href="Booking.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/Booking.css">
+   <link rel="stylesheet" href="css/StudentHousing.css">
 </head>
 <body>
-  <?php include 'includes/header.php'; ?>
-  <div class="container">
+  <?php include 'includes/header.php'; ?> 
+  <div class="student-housing-container">
     <img src="images/image5.jpg" alt="Student Housing" class="banner">
 
     <h1>Select Governorate</h1>
@@ -74,6 +76,7 @@
       }
     }
   </script>
+  <?php include 'includes/footer.php'; ?>
 </body>
-<?php include 'includes/footer.php'; ?>
+
 </html>

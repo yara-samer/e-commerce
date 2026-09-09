@@ -1,165 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Booking Confirmation</title>
-  <link rel="stylesheet" href="Booking.css">
-  <style>
-   
-    body {
-      background-color: #FBF5EF;
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      color: #0A2640;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   
-    .popup {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(10, 38, 64, 0.7);
-      justify-content: center;
-      align-items: center;
-      cursor: pointer; 
-    }
+    <title>Booking Confirmation</title>
 
-    .popup-content {
-      background: #fff;
-      padding: 30px;
-      border-radius: 12px;
-      text-align: center;
-      max-width: 400px;
-      box-shadow: 0 0 25px rgba(0,0,0,0.3);
-      animation: fadeIn 0.8s ease-in-out;
-      position: relative;
-    }
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="css/Header.css">
 
-    .popup-content h2 {
-      color: #425C39; 
-      margin-bottom: 15px;
-    }
+    <!-- Booking CSS -->
+    <link rel="stylesheet" href="css/Booking.css">
 
-    .popup-content p {
-      font-size: 18px;
-      margin: 10px 0;
-    }
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
 
-    .QR-code {
-      width: 150px;
-      margin: 20px auto;
-      display: block;
-    }
+    <style>
 
-    
-    .confetti {
-      position: absolute;
-      top: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 30px;
-      animation: fall 2s infinite;
-    }
+        /* =========================
+           CONFIRMATION PAGE
+           ========================= */
 
-    @keyframes fadeIn {
-      from { opacity: 0; transform: scale(0.8); }
-      to { opacity: 1; transform: scale(1); }
-    }
+        body {
+            background-color: #FBF5EF;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            color: #0A2640;
+            
+        }
 
-    @keyframes fall {
-      0% { transform: translate(-50%, -20px); opacity: 1; }
-      100% { transform: translate(-50%, 200px); opacity: 0; }
-    }
 
-   
-    .container {
-      max-width: 700px;
-      margin: 40px auto;
-      padding: 30px;
-      background: #fff;
-      border-radius: 12px;
-      box-shadow: 0 0 25px rgba(10, 38, 64, 0.2);
-    }
+        /* =========================
+           CONFIRMATION CONTAINER
+           ========================= */
 
-    h3 {
-      color: #0A2640;
-      margin-bottom: 15px;
-    }
+        .confirmation-container {
+            max-width: 750px;
+            margin: 60px auto;
+            padding: 45px;
+            background-color: white;
+            border-radius: 18px;
+            box-shadow: 0 0 25px rgba(10, 38, 64, 0.18);
+            text-align: center;
+            animation: fadeIn 0.8s ease-in-out;
+        }
 
-    ul {
-      text-align: left;
-      font-size: 18px;
-      margin-top: 15px;
-    }
 
-    
-    .back-btn, .support-btn {
-      display: inline-block;
-      margin: 20px 10px;
-      padding: 12px 25px;
-      font-size: 18px;
-      border-radius: 8px;
-      border: none;
-      cursor: pointer;
-      transition: transform 0.2s ease, background-color 0.3s ease;
-      color: #fff;
-    }
+        /* =========================
+           SUCCESS ICON
+           ========================= */
 
-    .back-btn {
-      background-color: #0A2640;
-    }
-    .back-btn:hover {
-      background-color: #D2933E;
-      transform: scale(1.05);
-    }
+        .success-icon {
+            font-size: 65px;
+            margin-bottom: 15px;
+        }
 
-    .support-btn {
-      background-color: #D2933E;
-    }
-    .support-btn:hover {
-      background-color: #425C39;
-      transform: scale(1.05);
-    }
-  </style>
+
+        /* =========================
+           TITLE
+           ========================= */
+
+        .confirmation-container h1 {
+            color: #425C39;
+            font-size: 38px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+
+        /* =========================
+           WELCOME MESSAGE
+           ========================= */
+
+        .welcome-message {
+            color: #0A2640;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+
+        .confirmation-message {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+
+        /* =========================
+           QR CODE
+           ========================= */
+
+        .qr-section {
+            background-color: #FBF5EF;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 25px auto;
+            max-width: 400px;
+        }
+
+
+        .qr-section h3 {
+            color: #0A2640;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+
+        .QR-code {
+            width: 170px;
+            height: 170px;
+            object-fit: contain;
+            display: block;
+            margin: 15px auto;
+        }
+
+
+        .qr-section p {
+            color: #555;
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+
+        /* =========================
+           FAQ
+           ========================= */
+
+        .faq-section {
+            margin-top: 35px;
+            padding-top: 25px;
+            border-top: 1px solid #ddd;
+        }
+
+
+        .faq-section h2 {
+            color: #0A2640;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+
+        .faq-section ul {
+            text-align: left;
+            font-size: 17px;
+            line-height: 1.8;
+            padding-left: 25px;
+        }
+
+
+        .faq-section li {
+            margin-bottom: 8px;
+        }
+
+
+        /* =========================
+           BUTTONS
+           ========================= */
+
+        .confirmation-buttons {
+            margin-top: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+
+        .back-btn,
+        .support-btn {
+            padding: 12px 25px;
+            font-size: 17px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease,
+                        background-color 0.3s ease;
+        }
+
+
+        .back-btn {
+            background-color: #0A2640;
+            color: white;
+        }
+
+
+        .back-btn:hover {
+            background-color: #D2933E;
+            transform: scale(1.05);
+        }
+
+
+        .support-btn {
+            background-color: #D2933E;
+            color: white;
+        }
+
+
+        .support-btn:hover {
+            background-color: #425C39;
+            transform: scale(1.05);
+        }
+
+
+        /* =========================
+           ANIMATION
+           ========================= */
+
+        @keyframes fadeIn {
+
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+    </style>
+
 </head>
+
+
 <body>
+
+    <!-- HEADER -->
     <?php include 'includes/header.php'; ?>
 
-  <!-- Pop-up -->
-  <div id="popup" class="popup" onclick="closePopup()">
-    <div class="popup-content">
-      <div class="confetti">🎉</div>
-      <h1>✅ Booking Confirmed!</h1>
-      <p><h2>Welcome, Your booking is successful.</h2></p>
-      <p>You can arrive on the first day of your chosen duration.</p>
-      <img src="QR.png" alt="QR Code" class="QR-code">
-      <p>Scan this QR code when you arrive to verify your payment.</p>
-      <!-- <p><em>(Click anywhere to close this message)</em></p> -->
+
+    <!-- CONFIRMATION -->
+    <div class="confirmation-container">
+
+        <div class="success-icon">
+            🎉
+        </div>
+
+        <h1>
+            Booking Confirmed!
+        </h1>
+
+        <p class="welcome-message">
+            Welcome! Your booking was successful.
+        </p>
+
+        <p class="confirmation-message">
+            Your booking has been successfully submitted.
+            You can arrive on the first day of your chosen duration.
+        </p>
+
+
+        <!-- QR CODE -->
+        <div class="qr-section">
+
+            <h3>
+                Payment Verification
+            </h3>
+
+            <img
+                src="images/QR.png"
+                alt="QR Code"
+                class="QR-code"
+            >
+
+            <p>
+                Please scan this QR code when you arrive
+                to verify your payment.
+            </p>
+
+        </div>
+
+
+        <!-- FAQ -->
+        <div class="faq-section">
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+            <ul>
+
+                <li>
+                    Can I change my room after booking?
+                </li>
+
+                <li>
+                    Is there a refund policy?
+                </li>
+
+                <li>
+                    How can I contact the administration?
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- BUTTONS -->
+        <div class="confirmation-buttons">
+
+            <button
+                type="button"
+                class="back-btn"
+                onclick="history.back()">
+                Back
+            </button>
+
+            <a href="StudentHousing.php" class="support-btn">
+    Finish Registration
+</a>
+
+        </div>
+
     </div>
-  </div>
 
-  <!-- FAQ Section -->
-  <div class="container">
-    <h3>Frequently Asked Questions</h3>
-    <ul>
-      <li>Can I change my room after booking?</li>
-      <li>Is there a refund policy?</li>
-      <li>How can I contact the administration?</li>
-    </ul>
-    <button class="back-btn" onclick="history.back()"> Back</button>
-    <button class="support-btn">Contact Support</button>
-  </div>
 
-  <script>
-    function closePopup() {
-      document.getElementById("popup").style.display = "none";
-    }
-    window.onload = function() {
-      document.getElementById("popup").style.display = "flex";
-    }
-  </script>
+    <!-- FOOTER -->
+    <?php include 'includes/footer.php'; ?>
+
+
 </body>
-<?php include 'includes/footer.php'; ?>
+
 </html>

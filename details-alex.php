@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Housing Details - Agamy</title>
-  <link rel="stylesheet" href="Booking.css">
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="cssII/details.css"/>
+  <link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/Details.css">
+<link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
 </head>
 <body>
     <?php include 'includes/header.php'; ?>
@@ -30,7 +29,7 @@
       <li><span class="badge bg-success rounded-pill">Air Conditioning Available</span></li>
       <li><span class="badge bg-warning text-dark rounded-pill">Cleaning Coming Soon</span></li>
     </ul>
-    </ul>
+    
 
     <!-- House Details -->
     <h3 class="mt-4">House Information</h3>
@@ -57,7 +56,7 @@
     <h3 class="mt-4">Location</h3>
     
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d218360.4320591033!2d29.789724760297158!3d31.224005324433396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f5c49126710fd3%3A0xb4e0cda629ee6bb9!2sAlexandria%2C%20Alexandria%20Governorate!5e0!3m2!1sen!2seg!4v1788766448887!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    </iframe>
+    
     <p><a href="https://www.google.com/maps?q=30.091,31.364" target="_blank" class="btn btn-outline-primary mt-2">Share Location</a></p>
   </div>
 

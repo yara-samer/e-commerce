@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Booking Form</title>
-  <link rel="stylesheet" href="Booking.css">
+ <link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/Booking.css">
+<link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
 </head>
 <body>
     <?php include 'includes/header.php'; ?>

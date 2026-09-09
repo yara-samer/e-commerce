@@ -1,0 +1,171 @@
+/* =========================
+   DETAILS PAGES
+   ========================= */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #FBF5EF;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #0A2640;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(10, 38, 64, 0.2);
+  animation: fadeIn 1.2s ease-in-out;
+  text-align: center;
+}
+.container p,
+.container h1,
+.container h2,
+.container h3 {
+  text-align: center;
+}
+
+.container ul {
+  text-align: center;
+  display: inline-block;
+  margin: 15px auto;
+}
+
+.container .btn,
+.container button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.details-text {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 15px 0;
+}
+
+/* Typography */
+h1, h2, h3 {
+  color: #0A2640;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+ul {
+  text-align: left;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+ul li {
+  margin-bottom: 8px;
+  font-size: 30px;
+  align-items: center;
+}
+
+/* Images */
+.banner, .img-fluid {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  margin-top: auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+/* Buttons */
+button, .btn {
+  background-color: #D2933E;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background-color: #425C39;
+  transform: scale(1.05);
+}
+
+/* Book Now Button */
+.book-btn {
+  display: block;
+  margin: 40px auto 0 auto;
+  background-color: #D2933E;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 20px;
+  border-radius: 8px;
+  border: none;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Back Button */
+.back-btn {
+  display: block;
+  margin: 20px auto;
+  background-color: #0A2640;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #D2933E;
+  transform: scale(1.05);
+}
+
+/* Badges */
+.badge {
+  font-size: 16px;
+  padding: 10px 15px;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Discount Popup */
+.discount-popup {
+  animation: pop 1s ease-in-out infinite alternate;
+  color: #D2933E;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.1);
+    color: #425C39;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

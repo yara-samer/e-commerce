@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Housing Details - Mohandessin</title>
-  <link rel="stylesheet" href="Booking.css">
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="cssII/details.css"/>
+  <link rel="stylesheet" href="css/header.css">
+<link rel="stylesheet" href="css/Details.css">
+<link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
 </head>
 <body>
     <?php include 'includes/header.php'; ?>
