@@ -50,6 +50,7 @@
       <!-- Room Type -->
       <h2>Room Type</h2>
       <select name="room" required>
+        <option value="" disabled selected>-- Room Type --</option>
         <option value="single">Single</option>
         <option value="double">Double</option>
         <option value="triple">Triple</option>
